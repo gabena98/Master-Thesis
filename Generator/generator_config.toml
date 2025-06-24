@@ -1,0 +1,31 @@
+diagnoses_path = '../data/processed/diagnoses.parquet'
+
+[model]
+hidden_size = 256
+num_layers  = 3
+num_heads   = 4
+head_dim    = 32
+pos_base    = 10_000
+dropout     = 0.5
+device      = '3' # specific which GPU to use
+mlp_intermediate_size = 1024
+parametrized_head = false # @hack to have uniform kelso config
+
+[trainer]
+hole_prob         = 0.15
+num_test_rounds   = 30
+masked_loss_gamma = 100
+batch_size        = 32
+num_epochs        = 8000
+learning_rate     = 1e-4
+max_patient_len   = 150
+eval_split        = 0.15
+test_split        = 0.15
+weight_decay      = 0.05
+eval_batch_size   = 64
+patience          = 100
+save_directory    = 'results/generator-%(id)-%(date)/'
+# limit_num_batches = 5
+
+
+

@@ -1,0 +1,29 @@
+diagnoses_path = '../data/processed/diagnoses.parquet'
+
+[model]
+hidden_size = 256
+num_layers = 3
+dropout = 0.2
+embed_size = 256
+device = '0' # specific which GPU to use
+
+[trainer]
+batch_size      = 32
+num_epochs      = 1000
+learning_rate   = 1e-4
+max_patient_len = 400
+eval_split      = 0.15
+test_split      = 0.15
+weight_decay    = 0.05
+eval_batch_size = 64
+ccs_as_inputs   = false
+patience        = 80
+save_directory  = 'results/BiLSTM-%(id)-%(date)/'
+# limit_num_batches = 493
+
+[metrics]
+
+recalls = [5, 10, 20, 30]
+precisions = [5, 10, 20, 30]
+accuracies = [5, 10, 20, 30]
+
