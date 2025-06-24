@@ -29,7 +29,6 @@ Contains code and data processing scripts for the SETOR model:
 - `data_eicu_processing.py`, `data_graph_building.py`, etc.: Scripts for preparing and processing various medical datasets (e.g., MIMIC, eICU).
 - `__init__.py`: Marks the folder as a Python package.
 - `datasets/`, `outputs/`, etc.: Subfolders for processed data, dictionaries, and results.
-- `README.md`: Documentation specific to the SETOR model and its processing.
 
 ### `code`
 Contains Jupyter notebooks for data preprocessing and exploratory analysis:
