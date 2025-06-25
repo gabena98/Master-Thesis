@@ -10,6 +10,7 @@ from Generator.llama2_model import *
 import sys
 import os
 
+# update sys.path to include the path to the SETOR directory
 path_to_add = "/home/gbenanti/Tesi_Benanti/SETOR"
 if path_to_add not in sys.path:
     sys.path.append(path_to_add)

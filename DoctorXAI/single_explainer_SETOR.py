@@ -9,6 +9,7 @@ import tomlkit
 import sys
 import os
 
+# updaate the sys.path to include the SETOR directory
 path_to_add = "/home/gbenanti/Tesi_Benanti/SETOR"
 if path_to_add not in sys.path:
     sys.path.append(path_to_add)

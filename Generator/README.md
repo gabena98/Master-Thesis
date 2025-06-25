@@ -31,6 +31,15 @@ This folder contains code and configuration for training and using a Large Langu
     - Training parameters (batch size, learning rate, epochs, splits, etc.)
     - Device selection and save directory
 
+- **old_generator.py**  
+  Legacy code for generating synthetic patient data.
+
+  **How to run:**  
+  ```sh
+  python old_generator.py
+  ```
+
+
 ## Typical Workflow
 
 1. **Configure the Model and Training**  

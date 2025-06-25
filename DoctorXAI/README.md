@@ -32,14 +32,6 @@ This folder contains scripts, utilities, and libraries for explainability, neigh
   jupyter notebook neigh_distribution.ipynb
   ```
 
-- **old_generator.py**  
-  Legacy code for generating synthetic patient data.
-
-  **How to run:**  
-  ```sh
-  python old_generator.py
-  ```
-
 
 - **script_jaccard_lof.py**  
   Script to automate the computation of Jaccard similarity and Local Outlier Factor (LOF) metrics across different neighborhood types and sizes.
